@@ -20,3 +20,11 @@ pip install requests
 ```
 
 > A biblioteca `Rich` foi criada por mim para fazer o uso de cores e formatação.
+
+Além disso, caso queira fazer um arquivo `.exe` do projeto, instale a seguinte biblioteca
+
+```bash
+pip install pyinstaller
+```
+
+e execute o comando `pyinstaller --onefile --console ClimaNow.py`
