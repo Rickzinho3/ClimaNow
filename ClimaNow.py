@@ -30,7 +30,7 @@ def request(city):
     elif  response.status_code != 200 or response.status_code == 404:
         # load()
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(f'{color.vermelho}●{color.end} Status: {response.status_code}\n')
+        print(f'{color.vermelho}●{color.end} Status: {response.status_code} Not Found\n')
         print(f'{color.vermelho}Erro: Cidade não encontrada{color.end}')
     else:
         load()
@@ -45,7 +45,7 @@ def request(city):
         
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'\n{color.verde}●{color.end} Status: {response.status_code}\n')
-        print('-'*(len(temperatura) - 10), city, '-'*(len(temperatura) - 10))
+        print('-'*(len(temperatura) - 10), data['name'], '-'*(len(temperatura) - 10))
         print(f'🌡️  {temperatura}', 
             f'\n☁️  {clima}', 
             f'\n💧  {umidade}',
