@@ -60,3 +60,5 @@ while True:
         break
     
     request(city)
+
+print("olá mundo")
