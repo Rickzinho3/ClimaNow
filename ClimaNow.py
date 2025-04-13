@@ -60,5 +60,5 @@ while True:
         break
     
     request(city)
-
-print("olá mundo")
+    
+# para fazer a build do projeto, instale a biblioteca "pyinstaller" e execute o comando: pyinstaller --onefile --console ClimaNow.py
