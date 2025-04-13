@@ -1,3 +1,7 @@
+'''
+    Esta é uma biblioteca local desenvolvida por mim, para fazer o uso de cores e formatação em outras aplicações locais.
+'''
+
 # colores ansi em classe
 class Color:
     def __init__(self):
