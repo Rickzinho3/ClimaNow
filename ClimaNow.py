@@ -60,5 +60,3 @@ while True:
         break
     
     request(city)
-
-# fazer a build: pyinstaller --onefile --console API.py
