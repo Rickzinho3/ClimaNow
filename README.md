@@ -9,7 +9,7 @@
 O `ClimaNow` é um programa em python que permite consultar o clima completo de uma cidade, estado ou país. Utilizando uma API de clima, a aplicação exibe informações detalhadas sobre o tempo, incluindo temperatura, clima, umidade, entre outros dados.
 
 ## Detalhes
-Para o bom funcionamento da aplicação, instale as bibliotecas a seguir
+Para o bom funcionamento da aplicação, abra seu cmd com `win + R` e instale as bibliotecas a seguir
 
 ```bash
 pip install tqdm
