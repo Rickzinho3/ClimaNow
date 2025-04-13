@@ -45,7 +45,7 @@ def request(city):
         
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'\n{color.verde}●{color.end} Status: {response.status_code}\n')
-        print('-'*(len(temperatura) - 10), data['name'], '-'*(len(temperatura) - 10))
+        print('-'*(len(temperatura) - 10), data['name'],',', data['sys']['country'], '-'*(len(temperatura) - 10))
         print(f'🌡️  {temperatura}', 
             f'\n☁️  {clima}', 
             f'\n💧  {umidade}',
