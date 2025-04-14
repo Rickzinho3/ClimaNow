@@ -43,32 +43,11 @@ def request(city):
         print(f'{color.vermelho}Erro: Cidade não encontrada{color.end}')
     else:
         load()
-        # temp = floor(data['main']['temp'])
-        
-        # temperatura = f'Temperatura: {color.ciano}{temp}°C{color.end}'
-        clima = f'Clima: {color.ciano}{data['weather'][0]['description']}{color.end}'
-        umidade = f'Umidade: {color.ciano}{data['main']['humidity']}%{color.end}'
-        pressao = f'Pressão: {color.ciano}{data['main']['pressure']} hPa{color.end}'
-        vento = f'Vento: {color.ciano}{data['wind']['speed']} m/s{color.end}'
-        feels = f'Sensação térmica: {color.ciano}{floor(data['main']['feels_like'])}°C{color.end}'
-        
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'\n{color.verde}●{color.end} Status: {response.status_code}\n')
-        # print('-'*(len(temperatura) - 10), data['name'],',', data['sys']['country'], '-'*(len(temperatura) - 10))
-        # print(f'🌡️  {temperatura}', 
-        #     f'\n☁️  {clima}', 
-        #     f'\n💧  {umidade}',
-        #     f'\n📈  {pressao}',
-        #     f'\n🌬️  {vento}',
-        #     f'\n🔥  {feels}'),
         
         info = Text()
-        # info.append(f'Temperatura: {floor(data['main']['temp'])}°C')
-        # info.append(f'\nClima: {data['weather'][0]['description']}')
-        # info.append(f'\nUmidade: {data['main']['humidity']}%')
-        # info.append(f'\nPressão: {data['main']['pressure']} hPa')
-        # info.append(f'\nVento: {data['wind']['speed']} km/h')
-        # info.append(f'\nSensação térmica: {floor(data['main']['feels_like'])}°C')
+
         info.append("Temperatura: ")
         info.append(f"{floor(data['main']['temp'])}", style="cyan")
         info.append("°C\n")
@@ -77,20 +56,27 @@ def request(city):
         info.append(f"{data['weather'][0]['description']}\n", style="cyan")
 
         info.append("Umidade: ")
-        info.append(f"{data['main']['humidity']}%\n", style="cyan")
+        info.append(f"{data['main']['humidity']}", style="cyan")
+        info.append("%\n")
 
         info.append("Pressão: ")
-        info.append(f"{data['main']['pressure']} hPa\n", style="cyan")
+        info.append(f"{data['main']['pressure']} ", style="cyan")
+        info.append("hPa\n")
 
         info.append("Vento: ")
-        info.append(f"{data['wind']['speed']} km/h\n", style="cyan")
+        info.append(f"{data['wind']['speed']} ", style="cyan")
+        info.append("km/h\n")
 
         info.append("Sensação térmica: ")
         info.append(f"{floor(data['main']['feels_like'])}", style="cyan")
         info.append("°C")
-
         
-        panel = Panel(info, width=50, border_style="cyan", title=f'{data['name']}, {data['sys']['country']}')
+        countryName = data['name']
+        country = ''
+        
+        country = "África" if countryName == "Africa" else data['sys']['country']
+        
+        panel = Panel(info, width=50, title=f'{data['name']}, {country}')
         printr(panel)
         
 while True:
