@@ -60,5 +60,3 @@ while True:
         break
     
     request(city)
-
-# teste
