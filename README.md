@@ -12,12 +12,16 @@ O `ClimaNow` é um programa em python que permite consultar o clima completo de 
 
 Para o bom funcionamento da aplicação, abra seu cmd com `win + R` e instale as bibliotecas a seguir
 
-``` bash
+```bash
 pip install tqdm
 ```
 
-``` bash
-pip install requests 
+```bash
+pip install requests
+```
+
+```bash
+pip install rich
 ```
 
 > A biblioteca `Rich` foi criada por mim para fazer o uso de cores e formatação.
