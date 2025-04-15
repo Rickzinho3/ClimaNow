@@ -20,7 +20,6 @@ key = 'a4a46591cde2403cee5974af4a061503'
 print(f"\n⚙️  {color.amarelo}System{color.end}: digite {format.bold}sair{format.end} para encerrar o programa. \n")
 
 def load():
-    os.system('cls' if os.name == 'nt' else 'clear')
     print('\nBucando informações...')
     for _ in tqdm.tqdm(range(100), desc="Buscando", ncols=70):
         time.sleep(0.01)
@@ -29,6 +28,7 @@ def request(city):
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}&lang=pt_br&units=metric'
     response = get(url)
     data = response.json()
+    load()
 
     if city.isspace() or city == '':
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -42,7 +42,6 @@ def request(city):
         print(f'{color.vermelho}●{color.end} Status: {response.status_code} Not Found\n')
         print(f'{color.vermelho}Erro: Cidade não encontrada{color.end}')
     else:
-        load()
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'\n{color.verde}●{color.end} Status: {response.status_code}\n')
         
