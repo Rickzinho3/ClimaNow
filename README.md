@@ -1,5 +1,18 @@
 <h1 align="center">ClimaNow</h1>
 
+<div align="center">
+    
+![Project Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Rich](https://img.shields.io/badge/lib-rich-purple?logo=python)
+![TQDM](https://img.shields.io/badge/lib-tqdm-lightgrey)
+![Requests](https://img.shields.io/badge/lib-requests-darkgreen)
+![License](https://img.shields.io/badge/license-uso%20restrito-red)
+![Study Purpose](https://img.shields.io/badge/uso-educacional-blueviolet)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![pip](https://img.shields.io/badge/pip-ready-brightgreen)
+    
+</div>
+
 <h2>O uso dos arquivos deste projeto é limitado apenas a fins de estudos, qualquer outra ação está estrictamente proibida.</h2>
 
 <div align="center">
