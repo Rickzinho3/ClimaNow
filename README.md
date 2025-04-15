@@ -2,7 +2,7 @@
 
 <div align="center">
     
-![Project Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Project Status](https://img.shields.io/badge/status-finalizado-yellow)
 ![Rich](https://img.shields.io/badge/lib-rich-purple?logo=python)
 ![TQDM](https://img.shields.io/badge/lib-tqdm-lightgrey)
 ![Requests](https://img.shields.io/badge/lib-requests-darkgreen)
