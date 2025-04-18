@@ -3,7 +3,7 @@
 <div align="center">
     
 ![Project Status](https://img.shields.io/badge/status-finalizado-yellow)
-![versão](https://img.shields.io/badge/versão-1.0.0-important)
+![versão](https://img.shields.io/badge/versão-1.2.0-important)
 ![Rich](https://img.shields.io/badge/lib-rich-purple?logo=python)
 ![TQDM](https://img.shields.io/badge/lib-tqdm-lightgrey)
 ![Requests](https://img.shields.io/badge/lib-requests-darkgreen)
