@@ -59,3 +59,5 @@ Agora o `ClimaNow` conta com uma nova versão disponível na pasta `new`.
 > O sistema agora conta com uma barra de progresso funcional utilizando a biblioteca `rich`
 
 > Se teclado `Enter`, o sistema irá buscar os dados climáticos com base na localização atual do usuário.
+
+> Os nomes dos locais agora estarão todos em português.
