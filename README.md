@@ -47,3 +47,15 @@ pip install pyinstaller
 ```
 
 E exeute o comando `pyinstaller --onefile --console ClimaNow.py`
+
+<h1>Novidades</h1>
+
+Agora o `ClimaNow` conta com uma nova versão disponível na pasta `new`.
+
+> Uso de 3 novas APIs para obter um melhor resultado nas pesquisas.
+
+> Adicionado masi informações sobre o clima, como direção do vento, chuva e preciptação.
+ 
+> O sistema agora conta com uma barra de progresso funcional utilizando a biblioteca `rich`
+
+> Se teclado `Enter`, o sistema irá buscar os dados climáticos com base na localização atual do usuário.
